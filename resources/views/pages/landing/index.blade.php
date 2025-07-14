@@ -107,16 +107,14 @@
       </div>
       <div class="col-lg-6" data-aos="fade-left">
         <div class="row g-4 mb-4">
-          @foreach ([
-            'Hawai Pramuka' => 'Lorem ipsum...',
-            'Ikatan Pelajar Muhammadiyah' => 'Quis nostrud...',
-            'Tapak Suci' => 'Duis aute irure...',
-            'Futsal' => 'Excepteur sint occaecat...'
-          ] as $title => $desc)
+  @foreach ($ekstras as $e)
             <div class="col-md-6" data-aos="zoom-in">
               <div class="student-activity-item">
-                <h4>{{ $title }}</h4>
-                <p>{{ $desc }}</p>
+                <h4>{{ $e->nama }}</h4>
+                  <div>
+                            <div class="text-muted small mb-1">Jadwal Kegiatan</div>
+                            <div class="fw-semibold text-dark">{{ $e->jadwal }}</div>
+                </div>
               </div>
             </div>
           @endforeach

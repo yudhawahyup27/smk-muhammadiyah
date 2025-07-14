@@ -8,6 +8,10 @@ class DashboardController extends Controller
 {
 
     public function index() {
-        return view("pages.dashboard.index");
+        $user = auth()->user()->first();
+        if (!$user) {
+            return redirect()->route('login');
+        }
+        return view("pages.dashboard.index", compact('user'));
     }
 }

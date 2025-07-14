@@ -28,4 +28,12 @@ class AuthController extends Controller
         'email' => 'Email atau password salah.',
     ])->withInput();
 }
+
+
+   public function logout()
+    {
+        Auth::logout();
+        return redirect()->route('landing.home');
+    }
+
 }

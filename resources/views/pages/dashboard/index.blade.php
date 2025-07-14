@@ -2,5 +2,5 @@
 
 @section('title', 'Dashboard')
 @section('content')
-<p>Yudha</p>
+<h3>Selamat Datang {{ $user->name }}</h3>
 @endsection
