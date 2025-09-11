@@ -4,7 +4,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\alumni;
+use App\Models\Alumni;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\alumni;
+use App\Models\Alumni;
 use App\Models\Ekstra;
-use App\Models\fasilitas;
-use App\Models\jurusan;
+use App\Models\Fasilitas;
+use App\Models\Jurusan;
 use App\Models\Profile;
 use Illuminate\Http\Request;
 

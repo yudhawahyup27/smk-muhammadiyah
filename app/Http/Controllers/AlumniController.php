@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\alumni;
-use App\Models\jurusan;
+use App\Models\Alumni;
+use App\Models\Jurusan;
 use Illuminate\Http\Request;
 use Storage;
 

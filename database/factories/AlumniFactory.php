@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\alumni;
-use App\Models\jurusan;
+use App\Models\Alumni;
+use App\Models\Jurusan;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class AlumniFactory extends Factory

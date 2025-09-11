@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\fasilitas;
+use App\Models\Fasilitas;
 use Illuminate\Container\Attributes\Storage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage as FacadesStorage;
