@@ -7,7 +7,7 @@
 <section id="profile" class="hero section dark-background">
   <div class="hero-container">
    <video autoplay muted loop playsinline class="video-background">
-   <source src="{{ asset('assets/profilSmk.mp4') }}" type="video/mp4">
+   <source src="{{ asset('assets/profileSMK.mp4') }}" type="video/mp4">
 </video>
     <div class="overlay"></div>
     <div class="container">
