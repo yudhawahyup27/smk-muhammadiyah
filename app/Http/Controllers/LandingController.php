@@ -14,7 +14,7 @@ class LandingController extends Controller
     public function index () {
         $ekstras = Ekstra::take(4)->get();
         $jurusan = Jurusan::get();
-        $fasilitas = fasilitas::take(4)->get();
+        $fasilitas = Fasilitas::take(4)->get();
         $profile = Profile::get()->first();
         return view('pages.landing.index',compact('ekstras','jurusan', 'fasilitas', 'profile'));
     }
@@ -66,7 +66,7 @@ public function jurusan(){
     return view('pages.landing.jurusan.index',compact('jurusan'));
 }
 public function fasilitas(){
-    $fasilitas= fasilitas::get();
+    $fasilitas= Fasilitas::get();
     return view('pages.landing.fasilitas.index',compact('fasilitas'));
 }
 

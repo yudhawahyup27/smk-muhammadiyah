@@ -13,7 +13,7 @@ class FasilitasController extends Controller
     {
         $search = $request->query('search');
 
-        $fasilitas = fasilitas::when($search, function ($query, $search) {
+        $fasilitas = Fasilitas::when($search, function ($query, $search) {
             return $query->where('nama', 'like', "%{$search}%")
                          ->orWhere('deskripsi', 'like', "%{$search}%");
         })->paginate(10);
@@ -23,7 +23,7 @@ class FasilitasController extends Controller
 
     public function manage($id = null)
     {
-        $data = $id ? fasilitas::findOrFail($id) : new fasilitas();
+        $data = $id ? Fasilitas::findOrFail($id) : new fasilitas();
         return view('pages.dashboard.fasilitas.manage', compact('data'));
     }
 
@@ -39,14 +39,14 @@ class FasilitasController extends Controller
             $data['gambar'] = $request->file('gambar')->store('fasilitas', 'public');
         }
 
-        fasilitas::create($data);
+        Fasilitas::create($data);
 
         return redirect()->route('dashboards.fasilitas')->with('success', 'fasilitas berhasil ditambahkan.');
     }
 
     public function update(Request $request, $id)
     {
-        $fasilitas = fasilitas::findOrFail($id);
+        $fasilitas = Fasilitas::findOrFail($id);
 
         $data = $request->validate([
             'nama' => 'required|string|max:255',
@@ -68,7 +68,7 @@ class FasilitasController extends Controller
 
     public function destroy($id)
     {
-        $fasilitas = fasilitas::findOrFail($id);
+        $fasilitas = Fasilitas::findOrFail($id);
 
         if ($fasilitas->gambar) {
             FacadesStorage::disk('public')->delete($fasilitas->gambar);
