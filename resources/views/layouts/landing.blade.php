@@ -41,7 +41,7 @@
   @php
   use App\Models\Profile;
     $profile = Profile::get()->first();
- 
+
 @endphp
   {{-- Footer --}}
   @include('components.navigations.landing.footer',['profile' => $profile])

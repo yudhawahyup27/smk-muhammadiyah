@@ -102,4 +102,5 @@ class AlumniController extends Controller
 
         return redirect()->back()->with('success', 'Data alumni berhasil dihapus!');
     }
+
 }

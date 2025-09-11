@@ -82,7 +82,11 @@ return [
 
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 
+<<<<<<< HEAD
     'faker_locale' => env('APP_FAKER_LOCALE', 'id_ID'),
+=======
+    'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
+>>>>>>> f31aec4a73bcf17314b7d1639898c82b9808446b
 
     /*
     |--------------------------------------------------------------------------
