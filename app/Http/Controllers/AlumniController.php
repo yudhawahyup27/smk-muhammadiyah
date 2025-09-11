@@ -11,10 +11,10 @@ class AlumniController extends Controller
 {
     public function index(Request $request)
     {
-        $jurusans = jurusan::all();
+        $jurusans = Jurusan::all();
 
         // Query builder untuk alumni dengan filter
-        $query = alumni::with('jurusan');
+        $query = Alumni::with('jurusan');
 
         // Filter berdasarkan jurusan
         if ($request->filled('jurusan')) {

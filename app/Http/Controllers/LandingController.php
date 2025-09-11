@@ -13,7 +13,7 @@ class LandingController extends Controller
 {
     public function index () {
         $ekstras = Ekstra::take(4)->get();
-        $jurusan = jurusan::get();
+        $jurusan = Jurusan::get();
         $fasilitas = fasilitas::take(4)->get();
         $profile = Profile::get()->first();
         return view('pages.landing.index',compact('ekstras','jurusan', 'fasilitas', 'profile'));
@@ -27,7 +27,7 @@ class LandingController extends Controller
 
 public function alumni(Request $request)
 {
-    $query = alumni::query();
+    $query = Alumni::query();
 
     // Filter dinamis
     if ($request->filled('angkatan')) {
@@ -62,7 +62,7 @@ public function profile(){
 }
 
 public function jurusan(){
-    $jurusan= jurusan::get();
+    $jurusan= Jurusan::get();
     return view('pages.landing.jurusan.index',compact('jurusan'));
 }
 public function fasilitas(){

@@ -16,6 +16,6 @@ class AlumniSeeder extends Seeder
     public function run(): void
     {
         // Contoh membuat 50 data alumni dummy
-        alumni::factory()->count(28)->create();
+        Alumni::factory()->count(28)->create();
     }
 }

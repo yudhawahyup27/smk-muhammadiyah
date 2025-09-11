@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class AlumniFactory extends Factory
 {
-    protected $model = alumni::class;
+    protected $model = Alumni::class;
 
     public function definition(): array
     {
@@ -110,7 +110,7 @@ $photos = [
 ];
 
 
-        $jurusanId = jurusan::inRandomOrder()->first()?->id ?? jurusan::factory()->create()->id;
+        $jurusanId = Jurusan::inRandomOrder()->first()?->id ?? Jurusan::factory()->create()->id;
 
         return [
             'name' => $this->faker->name(),
