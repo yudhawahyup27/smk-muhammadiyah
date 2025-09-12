@@ -92,7 +92,7 @@
 
                 <img src="{{ asset( $a->photo) }}" alt="{{ $a->name }}" class="img-fluid">
 
-                {{-- <img src="{{ asset('storage/' . $a->photo) }}" alt="{{ $a->name }}" class="img-fluid"> --}}
+                {{-- <img src="{{ asset('storage/app/public/' . $a->photo) }}" alt="{{ $a->name }}" class="img-fluid"> --}}
               </div>
               <div class="profile-year">{{ $a->tahun_lulus }}</div>
             </div>

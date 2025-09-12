@@ -31,7 +31,7 @@
             <div class="facility-image">
                @if($item->gambar)
                                 <img src="{{ asset($item->gambar) }}" alt="Gambar" class="img-thumbnail"  />
-                                {{-- <img src="{{ asset('storage/' . $item->gambar) }}" alt="Gambar" class="img-thumbnail"  /> --}}
+                                {{-- <img src="{{ asset('storage/app/public/' . $item->gambar) }}" alt="Gambar" class="img-thumbnail"  /> --}}
                             @else
                                 -
                             @endif

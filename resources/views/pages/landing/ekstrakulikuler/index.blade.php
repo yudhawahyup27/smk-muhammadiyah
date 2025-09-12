@@ -24,7 +24,7 @@
                         <img src="{{ asset(  $items->gambar) }}"
                              class="img-fluid w-100 h-100 object-fit-cover"
                              alt="{{ $items->nama }}">
-                        {{-- <img src="{{ asset('storage/' . $items->gambar) }}"
+                        {{-- <img src="{{ asset('storage/app/public/' . $items->gambar) }}"
                              class="img-fluid w-100 h-100 object-fit-cover"
                              alt="{{ $items->nama }}"> --}}
                     @else

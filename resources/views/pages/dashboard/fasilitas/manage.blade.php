@@ -54,7 +54,7 @@
                                 <div class="mt-2">
                                     <label class="form-label text-muted small">Gambar saat ini:</label>
                                     <div>
-                                        <img src="{{ asset('storage/' . $data->gambar) }}"
+                                        <img src="{{ asset('storage/app/public/' . $data->gambar) }}"
                                              alt="Gambar fasilitas"
                                              class="img-thumbnail border-2"
                                              style="height: 80px; object-fit: cover;">
