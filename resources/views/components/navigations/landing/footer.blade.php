@@ -25,7 +25,7 @@
       <!-- Kontak & Sosial Media -->
       <div class="col-lg-auto col-md-3 footer-links">
         <div class="footer-contact pt-3">
-          <p>{{ $profile->alamat ?? 'Alamat belum tersedia' }}</p>
+          <p>{{!! $profile->alamat ?? 'Alamat belum tersedia' }}</p>
           <p class="mt-3"><strong>Whatsapp:</strong> <span>{{ $profile->telepon ?? '-' }}</span></p>
           <p><strong>Email:</strong> <span>{{ $profile->email ?? '-' }}</span></p>
         </div>

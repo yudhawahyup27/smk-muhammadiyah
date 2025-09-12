@@ -19,7 +19,6 @@
           <div class="hero-content">
             <span class="alumni-badge">Alumni Community</span>
             <h2>Ikut Menjadi Bagian Alumni Kami</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus, velit vel fringilla venenatis, urna risus volutpat nisi, ac commodo dolor nulla quis lorem. In mattis dictum malesuada.</p>
             <div class="alumni-metrics">
               <div class="metric">
                 <div class="counter">{{ number_format($totalLulus) }}</div>
