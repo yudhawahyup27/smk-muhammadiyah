@@ -19,7 +19,7 @@
           <div class="program-item d-flex h-100">
             <div class="col-4 program-image-wrapper me-3">
               <img src="{{ asset( $jur->gambar) }}" class="img-fluid rounded" alt="Program {{ $jur->nama }}">
-              {{-- <img src="{{ asset('storage/' . $jur->gambar) }}" class="img-fluid rounded" alt="Program {{ $jur->nama }}"> --}}
+              {{-- <img src="{{ asset('storage/app/public/' . $jur->gambar) }}" class="img-fluid rounded" alt="Program {{ $jur->nama }}"> --}}
             </div>
             <div class="flex-fill">
               <h3 class="mb-2">{{ $jur->nama }}</h3>

@@ -46,7 +46,7 @@
                         <td>{{ $item->nama }}</td>
                         <td>
                             @if($item->gambar)
-                                <img src="{{ asset('storage/' . $item->gambar) }}" alt="Gambar" class="img-thumbnail" style="height: 48px;" />
+                                <img src="{{ asset('storage/app/public/' . $item->gambar) }}" alt="Gambar" class="img-thumbnail" style="height: 48px;" />
                             @else
                                 -
                             @endif

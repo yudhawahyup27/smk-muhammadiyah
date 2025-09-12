@@ -54,7 +54,7 @@
                     @enderror
                     @if (!empty($alumni->photo))
                         <div class="mt-2">
-                            <img src="{{ asset('storage/' . $alumni->photo) }}" class="rounded" width="100" />
+                            <img src="{{ asset('storage/app/public/' . $alumni->photo) }}" class="rounded" width="100" />
                             <small class="text-muted d-block">Foto saat ini</small>
                         </div>
                     @endif

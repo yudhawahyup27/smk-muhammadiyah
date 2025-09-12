@@ -43,7 +43,7 @@
 
                 @if(!empty($data->gambar))
                     <div class="mt-2">
-                        <img src="{{ asset('storage/' . $data->gambar) }}" class="img-thumbnail" width="120">
+                        <img src="{{ asset('storage/app/public/' . $data->gambar) }}" class="img-thumbnail" width="120">
                     </div>
                 @endif
             </div>

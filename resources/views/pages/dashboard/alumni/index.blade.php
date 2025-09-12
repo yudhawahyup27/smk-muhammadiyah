@@ -82,7 +82,7 @@
                             <td>{{ $item->name }}</td>
                             <td>
                                 @if($item->photo)
-                                    <img src="{{ asset('storage/' . $item->photo) }}" width="50" class="rounded">
+                                    <img src="{{ asset('storage/app/public/' . $item->photo) }}" width="50" class="rounded">
                                 @else
                                     <span class="text-muted">Tidak Ada</span>
                                 @endif
