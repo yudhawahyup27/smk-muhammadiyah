@@ -30,8 +30,8 @@
           <div class="facility-card h-100">
             <div class="facility-image">
                @if($item->gambar)
-                                <img src="{{ asset($item->gambar) }}" alt="Gambar" class="img-thumbnail"  />
-                                {{-- <img src="{{ asset('storage/app/public/' . $item->gambar) }}" alt="Gambar" class="img-thumbnail"  /> --}}
+                                <img src="{{ asset('storage/app/public/' .$item->gambar) }}" alt="Gambar" class="img-thumbnail"  />
+                                {{-- <img src="{{ asset('storage/app/public/' .'storage/app/public/' . $item->gambar) }}" alt="Gambar" class="img-thumbnail"  /> --}}
                             @else
                                 -
                             @endif
