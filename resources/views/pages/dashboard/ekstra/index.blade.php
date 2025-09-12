@@ -23,9 +23,10 @@
                 <!-- Image Section -->
                 <div class="position-relative overflow-hidden" style="height: 250px;">
                     @if($items->gambar)
-                        <img src="{{ asset('storage/' . $items->gambar) }}"
-                             class="img-fluid w-100 h-100 object-fit-cover"
-                             alt="{{ $items->nama }}">
+
+                             <img src="{{ asset('storage/app/public/' .$items->gambar) }}"
+     class="img-fluid w-100 h-100 object-fit-cover"
+     alt="{{ $items->nama }}">
                     @else
                         <div class="w-100 h-100 bg-light d-flex align-items-center justify-content-center">
                             <div class="text-center text-muted">
