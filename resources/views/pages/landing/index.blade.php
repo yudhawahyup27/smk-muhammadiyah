@@ -92,7 +92,7 @@
             </div>
             <div class="flex-fill">
               <h3 class="mb-2">{{ $jur->nama }}</h3>
-              <p class="mb-0 text-muted">{{ Str::limit($jur->deskripsi, 200) }}</p>
+              <p class="mb-0 text-muted">{!! Str::limit($jur->deskripsi, 200) !!}</p>
             </div>
           </div>
         </div>
