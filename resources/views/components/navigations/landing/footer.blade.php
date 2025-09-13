@@ -48,11 +48,8 @@
   <!-- Copyright -->
   <div class="container copyright text-center mt-4">
     <p>© <span>Copyright <script>document.write(new Date().getFullYear())</script>,</span>
-      <strong class="px-1 sitename">{{ $profile->name ?? 'SMK Muhammadiyah Ngadiluwih Kediri' }}</strong>
+      <a href="https://pondoktech.com" target="_blank"><strong class="px-1 sitename">{{ $profile->name ?? 'SMK Muhammadiyah Ngadiluwih Kediri' }}</strong></a>
       <span>All Rights Reserved</span>
     </p>
-    <div class="credits">
-      Design & Development by <a href="https://pondoktech.com" target="_blank">Pondoktech.com</a>
-    </div>
   </div>
 </footer>
