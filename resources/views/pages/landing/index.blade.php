@@ -6,12 +6,15 @@
 <!-- Hero Section -->
 <section id="profile" class="hero section dark-background">
   <div class="hero-container">
-  <iframe src="https://drive.google.com/file/d/1gXWBrXQfVymkTaajXq_cZWEm6f1TMGfW/preview"
-        width="100%"
-        height="480"
-        allow="autoplay"
-        class="rounded-4 shadow-sm">
-</iframe>
+ <iframe src="https://drive.google.com/file/d/1gXWBrXfVymkTaajXq_cZWEm6f1TMGfW/preview"
+            class="video-background"
+            allow="autoplay"
+            muted
+            loop
+            playsinline
+            style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;"
+            frameborder="0">
+    </iframe>
     <div class="overlay"></div>
     <div class="container">
       <div class="row align-items-center">
