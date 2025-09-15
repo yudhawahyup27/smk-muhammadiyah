@@ -6,9 +6,12 @@
 <!-- Hero Section -->
 <section id="profile" class="hero section dark-background">
   <div class="hero-container">
-   <video autoplay muted loop playsinline class="video-background">
-   <source src="{{ asset('/assets/profileSMK.mp4') }}" type="video/mp4">
-</video>
+  <iframe src="https://drive.google.com/file/d/1gXWBrXQfVymkTaajXq_cZWEm6f1TMGfW/preview"
+        width="100%"
+        height="480"
+        allow="autoplay"
+        class="rounded-4 shadow-sm">
+</iframe>
     <div class="overlay"></div>
     <div class="container">
       <div class="row align-items-center">
