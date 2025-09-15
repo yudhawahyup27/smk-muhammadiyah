@@ -6,7 +6,6 @@
 <section id="profile" class="hero section dark-background">
   <div class="hero-container">
     <img src="{{ asset('assets/img/fotosekolah.jpeg') }}" alt="Foto Sekolah">
-    {{-- Jika ingin pakai video --}}
     {{-- <video autoplay muted loop playsinline class="video-background">
       <source src="{{ asset('assets/profileSMK.mp4') }}" type="video/mp4">
     </video> --}}
@@ -23,7 +22,7 @@
             </div>
           </div>
         </div>
-        {{-- Statistik tambahan --}}
+        {{-- Statistik --}}
       </div>
     </div>
   </div>
@@ -100,6 +99,45 @@
           </div>
         </div>
         @endforeach
+    </div>
+  </div>
+</section>
+
+<!-- Students Life Section -->
+<section id="ekskul" class="students-life-block section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Ekstrakurikuler</h2>
+  </div>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="students-life-img position-relative">
+          {{-- Ganti dengan gambar lokal jika sudah ada --}}
+          <img src="{{ asset('assets/img/ekskul.jpg') }}" class="img-fluid rounded-4 shadow-sm" alt="Students Life">
+          <div class="img-overlay">
+            <h3>Discover Ekstrakulikuler</h3>
+            <a href="/ekstrakulikuler" class="explore-btn">Explore More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="row g-4 mb-4">
+          @foreach ($ekstras as $e)
+            <div class="col-md-6" data-aos="zoom-in">
+              <div class="student-activity-item">
+                <h4>{{ $e->nama }}</h4>
+                <div>
+                  <div class="text-muted small mb-1">Jadwal Kegiatan</div>
+                  <div class="fw-semibold text-dark">{{ $e->jadwal }}</div>
+                </div>
+              </div>
+            </div>
+          @endforeach
+        </div>
+        <div class="students-life-cta" data-aos="fade-up">
+          <a href="/ekstrakulikuler" class="btn btn-primary">View All Student Activities</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
